@@ -30,8 +30,8 @@ class Home extends React.Component {
 						this.state.showMe? null:				  					
 						<iframe
 							allow="microphone;"
-							width="350"
-							height="430"
+							width="400"
+							height="450"
 							title="myframe"
 							className="myframe"
 							src="https://console.dialogflow.com/api-client/demo/embedded/1ccc3f6f-ddb6-431e-8241-1dc94a134687">

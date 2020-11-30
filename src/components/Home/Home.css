@@ -8,6 +8,8 @@
 .myframe {
   z-index: 2;
   position: fixed;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 5px;
 }
 
 .Robot {
@@ -26,7 +28,11 @@
   font-size: large;
 }
 
-.robot .top {
+.Robot:hover {
+  cursor: pointer;
+}
+
+.Robot .top {
   margin-top: -20px;
 }
 
