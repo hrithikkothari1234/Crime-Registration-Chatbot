@@ -1,0 +1,22 @@
+.linky:hover {
+  text-decoration: none;
+}
+
+.linky {
+  color: black !important;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+@media (max-width: 995px) {
+  .linky {
+    text-align: center;
+    color: white !important;
+    background-color: gray;
+    border: 1px solid black;
+  }
+}
+
+.frcrce {
+  height: 50px;
+}
