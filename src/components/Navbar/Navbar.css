@@ -3,7 +3,7 @@
 }
 
 .linky {
-  color: black !important;
+  color: #fff !important;
   font-size: 1.1rem;
   font-weight: bold;
 }
@@ -18,5 +18,6 @@
 }
 
 .frcrce {
-  height: 50px;
+  border-radius: 50%;
+  height: 100px;
 }

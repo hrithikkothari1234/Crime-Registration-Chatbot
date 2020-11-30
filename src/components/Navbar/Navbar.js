@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import "./Navbar.css";
-import MyImage from "../assets/crime_logo.jpg";
+import MyImage from "../assets/main_logo.png";
 
 const MyNavbar = () => {
   return (

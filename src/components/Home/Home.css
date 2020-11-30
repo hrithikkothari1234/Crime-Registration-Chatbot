@@ -7,10 +7,9 @@
 
 .myback {
   height: 100vh;
-  /* background-image: url("../../assets/bg_images/landing.jpg"); */
+  background-image: url("../assets/police.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
   text-align: center;
 }
 
