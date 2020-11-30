@@ -2,8 +2,8 @@ import React, { Fragment } from "react";
 import { Container } from "react-bootstrap";
 import Content from "../Content/Content";
 import Navbar from "./../Navbar/Navbar";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faRobot } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faRobot } from '@fortawesome/free-solid-svg-icons';
 import "./Home.css";
 
 class Home extends React.Component {
