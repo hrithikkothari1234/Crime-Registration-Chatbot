@@ -5,7 +5,7 @@ import MyImage from "../assets/main_logo.png";
 
 const MyNavbar = () => {
   return (
-	<Navbar fixed="top" expand="lg" style={{"backgroundColor": "transparent"}}>
+	<Navbar fixed="top" expand="lg" id="nav">
 	  <div className="container">
 		<Navbar.Brand href="/">
 		  <img src={MyImage} className="frcrce" alt="frcrce" />
