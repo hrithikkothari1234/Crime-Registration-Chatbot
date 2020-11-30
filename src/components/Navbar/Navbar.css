@@ -2,6 +2,10 @@
   text-decoration: none;
 }
 
+#nav {
+  background-color: rgba(7, 7, 7, 0.5);
+}
+
 .linky {
   color: #fff !important;
   font-size: 1.1rem;
@@ -19,5 +23,5 @@
 
 .frcrce {
   border-radius: 50%;
-  height: 100px;
+  height: 60px;
 }
