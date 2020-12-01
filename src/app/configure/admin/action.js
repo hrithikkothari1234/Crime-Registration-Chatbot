@@ -1,13 +1,12 @@
-import firebase, { db } from '../firebase/firebase';
+import firebase from '../firebase/firebase';
 export const LOGIN_USER = "LOGIN_USER";
 export const  SIGN_OUT_USER = "SIGN_OUT_USER";
 
 export const Login = async (creds) =>{
   try {
-    const x = firebase
+    return firebase
       .auth()
       .signInWithEmailAndPassword(creds.email, creds.password);
-    console.log(x)
   } catch (err) {
     console.log(err)
   }
