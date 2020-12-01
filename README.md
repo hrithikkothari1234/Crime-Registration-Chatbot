@@ -23,9 +23,9 @@ Home Page
 <img src="https://github.com/hrithikkothari1234/Crime-Registration-Chatbot/blob/master/demo/home_chat.png" alt="chat" width="100%" height="400"/>
 
 Chat Flow for Crime Registration <br />
-<img src="https://github.com/hrithikkothari1234/Crime-Registration-Chatbot/blob/master/demo/chat0.png" alt="chat" width="33%" height="300"/>
-<img src="https://github.com/hrithikkothari1234/Crime-Registration-Chatbot/blob/master/demo/chat1.png" alt="chat" width="33%" height="300"/>
-<img src="https://github.com/hrithikkothari1234/Crime-Registration-Chatbot/blob/master/demo/chat2.png" alt="chat" width="33%" height="300"/>
+<img src="https://github.com/hrithikkothari1234/Crime-Registration-Chatbot/blob/master/demo/chat0.png" alt="chat" width="30%" height="300"/>
+<img src="https://github.com/hrithikkothari1234/Crime-Registration-Chatbot/blob/master/demo/chat1.png" alt="chat" width="30%" height="300"/>
+<img src="https://github.com/hrithikkothari1234/Crime-Registration-Chatbot/blob/master/demo/chat2.png" alt="chat" width="30%" height="300"/>
 
 Chat Flow for Crime Awareness <br />
 <img src="https://github.com/hrithikkothari1234/Crime-Registration-Chatbot/blob/master/demo/chat3.png" alt="chat" height="300"/>
