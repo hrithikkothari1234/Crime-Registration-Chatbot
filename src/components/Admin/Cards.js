@@ -1,12 +1,11 @@
-import React from 'react'
-import { Button, Card } from 'react-bootstrap'
-import { DeleteCase } from '../../app/configure/firebase/firebase'
-import "./Admin.css"
+import React from 'react';
+import { Button, Card } from 'react-bootstrap';
+import { DeleteCase } from '../../app/configure/firebase/firebase';
+import "./Admin.css";
 const Cards = ({details}) => {
-
+console.log(details)
     return (
       <Card className="cards_child">
-			<Card.Img variant="top" src="holder.js/100px160" />
 			    <Card.Body>
 						<Card.Title>{details.title || null}</Card.Title>
 				   	<Card.Text>
