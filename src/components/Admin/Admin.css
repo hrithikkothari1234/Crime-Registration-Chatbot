@@ -1,0 +1,23 @@
+
+.Main-Sub{
+    height: 100vh;
+}
+.head{
+    font-size: 2rem;
+    padding: 2rem 0;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+.cards_child{
+    margin: 1rem;
+    max-width: 20rem;
+}
+
+.center{
+    text-align: center;
+    margin-top: 20rem;
+}
