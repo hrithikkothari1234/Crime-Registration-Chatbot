@@ -1,0 +1,102 @@
+.myContainer {
+  text-align: center;
+  padding-top: 250px;
+  color: white !important;
+  width: 70%;
+}
+
+.myback {
+  height: 100vh;
+  background-image: url("../assets/police.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.myback h5 {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.myback p {
+  color: #eeecda;
+}
+
+.overlay {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.myContainer > h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .bgimg {
+    text-align: center;
+  }
+  .myContainer {
+    padding-top: 40%;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 600px) {
+  .myContainer {
+    padding-top: 49%;
+  }
+  #myimage {
+    height: 200px;
+    top: 25%;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .myContainer {
+    padding-top: 49%;
+  }
+  #myimage {
+    height: 250px;
+    top: 25%;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 100px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.animated {
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+}
+
+.animatedFadeInUp {
+  opacity: 0;
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
