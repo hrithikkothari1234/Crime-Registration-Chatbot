@@ -1,20 +1,21 @@
 import React, { Fragment, useEffect, useState } from "react";
-import { Button, Card, CardColumns, CardDeck, Col, Container, Spinner, TabContainer, } from "react-bootstrap";
+import { Button, ButtonGroup, Card, CardColumns, CardDeck, Col, Container, Spinner, TabContainer, } from "react-bootstrap";
 import { useSelector } from "react-redux";
 import { cases_registered } from "../../app/configure/firebase/firebase";
 import "./Admin.css";
-import MyVerticallyCenteredModal from "./modal";
+import MyVerticallyCenteredModal from "./authmodal";
 import Cards from "./Cards"
 import { SignOut} from "../../app/configure/admin/action";
+import { useHistory } from "react-router-dom";
 
 const Admin = () => {
 	const [modalCheck, setmodalCheck] = useState(false)
   const adminCheck = useSelector(state => state.firebase.auth)
   const adminProfile = useSelector(state=>state.firebase.profile)
-  const [cases, setcases] = useState([])
+	const [cases, setcases] = useState([])
+	const history = useHistory()
 
 	useEffect(() => {
-		console.log(adminCheck)
    	if(adminCheck.isEmpty === true && adminCheck.isLoaded === true){
    		setmodalCheck(true)
 		}
@@ -22,7 +23,7 @@ const Admin = () => {
 			cases_registered().then(res=>setcases([cases,...res.docs]));
 			console.log(cases)
 		}
-	}, [adminCheck])
+	}, [adminCheck,cases])
 	return (
 		<Fragment>
 			<MyVerticallyCenteredModal
@@ -33,7 +34,7 @@ const Admin = () => {
 				adminCheck.uid === undefined || adminCheck.uid === null ?
 				<Fragment>
 					<div className="center">
-						<Spinner animation="border"/>
+						<Spinner animation="border" onClick={()=>history.push('/')}/>
 					</div>
 				</Fragment>
 				: 
@@ -43,20 +44,22 @@ const Admin = () => {
 							<div className="head">
 								Hello,{adminProfile.displayName} 
 							</div>
-							<Button onClick={()=>SignOut()}>SignOut</Button>
+								<Button onClick={()=>{SignOut();history.push('/')}} className="button">SignOut</Button>
               {
                 cases.length > 0 ?
                 <Fragment>
 						<Container className="cards">
 								{cases.map((e,v)=>{
-									if(v>0) return<Cards/>
+									if(v>0) return<Cards details={e}/>
 								}
 								)}
 						</Container>
                 </Fragment> 
                 :
                 <Fragment>
-                  No results
+                  <div className="center">
+										<Spinner animation="border"/>
+									</div>
                 </Fragment>
               }
 					</Container>

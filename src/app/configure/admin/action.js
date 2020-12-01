@@ -1,22 +1,21 @@
-import firebase, { db } from '../firebase/firebase';
+import firebase from '../firebase/firebase';
 export const LOGIN_USER = "LOGIN_USER";
 export const  SIGN_OUT_USER = "SIGN_OUT_USER";
 
 export const Login = async (creds) =>{
-  return firebase
-    .auth()
-    .signInWithEmailAndPassword(creds.email, creds.password);
+  try {
+    return firebase
+      .auth()
+      .signInWithEmailAndPassword(creds.email, creds.password);
+  } catch (err) {
+    console.log(err)
+  }
 }
   export const SignOut = () => {
     return firebase.auth().signOut();
   }
   
-  
-  
 
-  export function signOutFirebase() {
-    return firebase.auth().signOut();
-  }
   
 /*
   const result = await firebase
