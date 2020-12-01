@@ -3,20 +3,20 @@ export const LOGIN_USER = "LOGIN_USER";
 export const  SIGN_OUT_USER = "SIGN_OUT_USER";
 
 export const Login = async (creds) =>{
-  return firebase
-    .auth()
-    .signInWithEmailAndPassword(creds.email, creds.password);
+  try {
+    const x = firebase
+      .auth()
+      .signInWithEmailAndPassword(creds.email, creds.password);
+    console.log(x)
+  } catch (err) {
+    console.log(err)
+  }
 }
   export const SignOut = () => {
     return firebase.auth().signOut();
   }
   
-  
-  
 
-  export function signOutFirebase() {
-    return firebase.auth().signOut();
-  }
   
 /*
   const result = await firebase

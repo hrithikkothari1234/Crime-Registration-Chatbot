@@ -26,5 +26,9 @@ export const cases_registered = () =>{
   return db.collection('Cases').get()
 }
 
+export const DeleteCase = (Id) =>{
+  return db.collection('Cases').doc(Id).delete()
+}
+
 
 

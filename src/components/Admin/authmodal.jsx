@@ -1,22 +1,27 @@
 import React, { Fragment, useEffect, useState } from "react";
 import { Button, Form, Modal } from "react-bootstrap";
+import { useHistory } from "react-router-dom";
 import { Login } from "../../app/configure/admin/action";
 
 const MyVerticallyCenteredModal = ({...props}) => {
     const [email, setemail] = useState('')
     const [password, setpassword] = useState('')
+    const history = useHistory()
     // function
     const handleSubmit =(e)=>{
       e.preventDefault()
-      Login({email,password});
-      props.onHide()
+      if(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email) || password.length > 6 ){
+        Login({email,password});
+      }
     }
     return (
       <Modal
         {...props}
         centered
+        backdrop="static"
+        keyboard={false}
       >
-        <Modal.Header closeButton>
+        <Modal.Header >
           <Modal.Title id="contained-modal-title-vcenter">
             Sign In
           </Modal.Title>
@@ -37,6 +42,7 @@ const MyVerticallyCenteredModal = ({...props}) => {
                 </Form.Group>
             </Modal.Body>
             <Modal.Footer>
+                <Button onClick={()=>history.push('/')} className="d-flex">Close</Button>
                 <Button type="submit"  onClick={(e)=>handleSubmit(e)}>
                     Sign In
                 </Button>

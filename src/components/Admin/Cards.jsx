@@ -1,19 +1,20 @@
 import React from 'react'
-import { Card } from 'react-bootstrap'
+import { Button, Card } from 'react-bootstrap'
+import { DeleteCase } from '../../app/configure/firebase/firebase'
 import "./Admin.css"
-const Cards = ({}) => {
+const Cards = ({details}) => {
+
     return (
       <Card className="cards_child">
 			<Card.Img variant="top" src="holder.js/100px160" />
 			    <Card.Body>
-				   <Card.Title>Card title</Card.Title>
-				   <Card.Text>
-			    		This is a wider card with supporting text below as a natural lead-in to
-		    			additional content. This content is a little bit longer.
+						<Card.Title>{details.title || null}</Card.Title>
+				   	<Card.Text>
+			    		{details.body || null}
 		  			</Card.Text>
 				</Card.Body>
 				<Card.Footer>
-					<small className="text-muted">Last updated 3 mins ago</small>
+					<Button variant="danger" onClick={()=>DeleteCase(details.id)}>Delete</Button>
 				</Card.Footer>
 	   </Card>
     )
