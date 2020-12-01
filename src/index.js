@@ -46,5 +46,3 @@ if(module.hot){
 }
 
 render();
-
-

@@ -1,97 +1,98 @@
 .team-page {
-  background-color: #e8e8e8;
-  padding-top: 1%;
-  height: 100vh;
-}
-
-.back-btn {
-  padding: 5px;
-  color: red;
-  font-size: 1.2rem;
-}
-
-.back-btn:hover {
-  text-decoration: none;
-  color: royalblue;
-}
-
-.team-page h5 {
-  font-weight: 700;
-  font-size: 1.5rem;
-  color: royalblue;
-}
-
-.team-image {
-  width: 100%;
-  height: 220px;
-  border-radius: 10px;
-  display: block;
-  transition: 0.3s ease-in-out;
-  object-fit: contain;
-}
-
-.team-image:hover,
-.hritik-image:hover {
-  transform: scale(1.3);
-  cursor: pointer;
-}
-
-.img-container {
-  width: 100%;
-  height: 220px;
-  position: relative;
-  overflow: hidden;
-}
-
-.hritik-image {
-  width: 100%;
-  height: 220px;
-  border-radius: 10px;
-  display: block;
-  transition: 0.3s ease-in-out;
-}
-
-.hritik-img-container {
-  width: 60%;
-  margin-left: 20%;
-  height: 220px;
-  position: relative;
-  overflow: hidden;
-}
-
-.team-name {
-  color: red;
-  font-size: 1.2rem;
-  font-weight: 700;
-}
-
-.team-descr {
-  color: #4e73df;
-  font-size: 0.9rem;
-}
-
-.fa-github {
-  color: black;
-}
-
-.fa-linkedin,
-.fa-github {
-  font-size: 1.2rem;
-}
-
-.fa-github:hover {
-  color: royalblue;
-}
-
-@media (max-width: 1000px) {
-  .team-page {
-    height: auto;
+    background-color: #e8e8e8;
+    padding-top: 1%;
+    height: 100vh;
   }
-}
-
-@media (max-width: 770px) and (min-width: 400px) {
+  
+  .back-btn {
+    padding: 5px;
+    color: red;
+    font-size: 1.2rem;
+  }
+  
+  .back-btn:hover {
+    text-decoration: none;
+    color: royalblue;
+  }
+  
+  .team-page h5 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: royalblue;
+  }
+  
+  .team-image {
+    width: 100%;
+    height: 220px;
+    border-radius: 10px;
+    display: block;
+    transition: 0.3s ease-in-out;
+    object-fit: contain;
+  }
+  
+  .team-image:hover,
+  .hritik-image:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+  }
+  
+  .img-container {
+    width: 100%;
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hritik-image {
+    width: 100%;
+    height: 220px;
+    border-radius: 10px;
+    display: block;
+    transition: 0.3s ease-in-out;
+  }
+  
   .hritik-img-container {
-    width: 50%;
-    margin-left: 25%;
+    width: 60%;
+    margin-left: 20%;
+    height: 220px;
+    position: relative;
+    overflow: hidden;
   }
-}
+  
+  .team-name {
+    color: red;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  
+  .team-descr {
+    color: #4e73df;
+    font-size: 0.9rem;
+  }
+  
+  .fa-github {
+    color: black;
+  }
+  
+  .fa-linkedin,
+  .fa-github {
+    font-size: 1.2rem;
+  }
+  
+  .fa-github:hover {
+    color: royalblue;
+  }
+  
+  @media (max-width: 1000px) {
+    .team-page {
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 770px) and (min-width: 400px) {
+    .hritik-img-container {
+      width: 50%;
+      margin-left: 25%;
+    }
+  }
+  

@@ -6,10 +6,6 @@
   background-color: rgba(7, 7, 7, 0.5);
 }
 
-.ham {
-  background-color: #614c4d !important;
-}
-
 .linky {
   color: #fff !important;
   font-size: 1.1rem;
@@ -20,7 +16,7 @@
   .linky {
     text-align: center;
     color: white !important;
-    background-color: #3d3636;
+    background-color: gray;
     border: 1px solid black;
   }
 }
