@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from "react";
-import { Button, ButtonGroup, Card, CardColumns, CardDeck, Col, Container, Spinner, TabContainer, } from "react-bootstrap";
+import { Button, Container, Spinner, } from "react-bootstrap";
 import { useSelector } from "react-redux";
 import { cases_registered } from "../../app/configure/firebase/firebase";
 import "./Admin.css";
@@ -21,11 +21,10 @@ const Admin = () => {
 		}
 		if(adminCheck.email){
 			cases_registered().then(res=>setcases([cases,...res.docs]));
-			console.log(cases)
 		}
 	}, [adminCheck,cases])
 	return (
-		<Fragment>
+		<Fragment >
 			<MyVerticallyCenteredModal
 				show={modalCheck}
 				onHide={setmodalCheck}
@@ -40,7 +39,7 @@ const Admin = () => {
 				: 
 				<Fragment>
 					<Container fluid className="Main">
-						<Container class="Main-Sub" fluid="lg">
+						<Container className="Main-Sub" fluid="lg">
 							<div className="head">
 								Hello,{adminProfile.displayName} 
 							</div>
@@ -50,7 +49,7 @@ const Admin = () => {
                 <Fragment>
 						<Container className="cards">
 								{cases.map((e,v)=>{
-									if(v>0) return<Cards details={e}/>
+									if(v>0) return<Cards details={e} key={v}/>
 								}
 								)}
 						</Container>
