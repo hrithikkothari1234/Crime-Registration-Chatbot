@@ -1,18 +1,48 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+
+import { ReactReduxFirebaseProvider } from 'react-redux-firebase';
+import firebase from 'firebase/app'
+import { createFirestoreInstance } from 'redux-firestore';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
-import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
+import App from './app/layout/App';
+import { configure } from './app/configure/store/store';
+import { Provider } from 'react-redux';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const root = document.getElementById('root')
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const store = configure()
+
+const rrfConfig = {
+  userProfile: 'users',
+  attachAuthIsReady: true,
+  useFirestoreForProfile:true,
+}
+
+const rrfProps={
+  firebase,
+  config:rrfConfig,
+  dispatch:store.dispatch,
+  createFirestoreInstance
+}
+
+let render = () => {
+  ReactDOM.render(
+    <Provider  store={store}>
+      <ReactReduxFirebaseProvider {...rrfProps}>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </ReactReduxFirebaseProvider>
+    </Provider>
+    ,root);
+
+} 
+
+if(module.hot){
+  module.hot.accept("./app/layout/App",()=>{setTimeout(render)})
+}
+
+render();
