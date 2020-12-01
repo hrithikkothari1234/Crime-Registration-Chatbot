@@ -7,13 +7,13 @@ console.log(details)
     return (
       <Card className="cards_child">
 			    <Card.Body>
-						<Card.Title>{details.title || null}</Card.Title>
+						<Card.Title>{details.[0].title || null}</Card.Title>
 				   	<Card.Text>
-			    		{details.body || null}
+			    		{details[0].body || null}
 		  			</Card.Text>
 				</Card.Body>
 				<Card.Footer>
-					<Button variant="danger" onClick={()=>DeleteCase(details.id)}>Delete</Button>
+					<Button variant="danger" onClick={()=>DeleteCase(details[1])}>Delete</Button>
 				</Card.Footer>
 	   </Card>
     )
