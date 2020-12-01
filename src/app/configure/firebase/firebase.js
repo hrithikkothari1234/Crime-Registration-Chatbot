@@ -27,13 +27,13 @@ export const cases_registered = async() =>{
   const events = await db.collection('Cases').get()
     .then(querySnapshot => {
       querySnapshot.docs.map(doc => {
-        data.push(doc.data())
+        data.push([doc.data(),doc.id])
       });
     });
   return data
 }
 
-export const DeleteCase = (Id) =>{
+export const DeleteCase = async(Id) =>{
   return db.collection('Cases').doc(Id).delete()
 }
 
