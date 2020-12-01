@@ -42,7 +42,7 @@ class Home extends React.Component {
 					<Container className="myContainer animated animatedFadeInUp fadeInUp">
 						<h5>Crime Registration &amp; Crime Awareness System</h5>
 						<p>
-							Our aim to eradicate crime from the system.If you have any queries or want to register a case click on the red chatbot option.
+							Our aim to eradicate crime from the world. If you have any queries or want to register a case click on the red chatbot option.
 						</p>
 					</Container>
 				</div>
