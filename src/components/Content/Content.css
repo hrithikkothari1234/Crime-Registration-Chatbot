@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap");
+
 #ways,
 #take,
 #smart,
@@ -14,11 +16,25 @@
   padding-top: 15px;
 }
 
-.mainh {
+.foots {
+  padding: 50px;
   text-align: center;
-  padding: 30px;
+  color: white !important;
+}
+
+.mainh {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 h2 {
+  font-family: "Lato", sans-serif;
   padding-bottom: 15px;
+}
+
+.footer {
+  margin-top: 40px;
+  background-color: rgb(5, 5, 70);
 }

@@ -8,7 +8,7 @@
 .myframe {
   z-index: 2;
   position: fixed;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
 }
 
@@ -30,14 +30,11 @@
 
 .Robot:hover {
   cursor: pointer;
+  background: #fa5d4b !important;
 }
 
 .Robot .top {
   margin-top: -20px;
-}
-
-.fix .gotopbtn :hover {
-  color: white;
 }
 
 .myback {
