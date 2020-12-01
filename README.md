@@ -15,8 +15,9 @@ $ npm start
 ```
 
 ### Demo
+<br />
 Home Page
-
+<br />
 <img src="https://github.com/hrithikkothari1234/Crime-Registration-Chatbot/blob/master/demo/home.png" alt="home page" width="100%" height="400"/>
 <img src="https://github.com/hrithikkothari1234/Crime-Registration-Chatbot/blob/master/demo/home_content.png" alt="con" width="100%" height="400"/>
 <img src="https://github.com/hrithikkothari1234/Crime-Registration-Chatbot/blob/master/demo/home_footer.png" alt="foot" width="100%" height="400"/>
