@@ -21,7 +21,6 @@ const Admin = () => {
 		}
 		if(adminCheck.email){
 			cases_registered().then(res=>setcases(res));
-			console.log(cases)
 		}
 	}, [adminCheck,cases])
 	return (
