@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from "react";
-import { Button, Card, CardColumns, CardDeck, Col, Container, TabContainer, } from "react-bootstrap";
+import { Button, Card, CardColumns, CardDeck, Col, Container, Spinner, TabContainer, } from "react-bootstrap";
 import { useSelector } from "react-redux";
 import { cases_registered } from "../../app/configure/firebase/firebase";
 import "./Admin.css";
@@ -32,7 +32,9 @@ const Admin = () => {
 			{
 				adminCheck.uid === undefined || adminCheck.uid === null ?
 				<Fragment>
-					Loading...
+					<div className="center">
+						<Spinner animation="border"/>
+					</div>
 				</Fragment>
 				: 
 				<Fragment>
