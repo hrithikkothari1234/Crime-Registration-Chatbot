@@ -1,20 +1,20 @@
 # Crime Registration and Awareness Chatbot
 Vigilante Bot tryna help eradicate crime from this world
 
-### Techs Used
+#### Techs Used
 * React.js, Redux
 * Firebase - Auth & Cloud Firestore
 * Bootstrap
 * DialogFlow
 
-### Setup
+#### Setup
 To run this project clone it and then :
 ```
 $ npm install
 $ npm start
 ```
 
-### Demo
+#### Demo
 Home Page
 <br />
 <br />
