@@ -28,8 +28,8 @@ class Home extends React.Component {
 						<div className="Robot" onClick={this.operation}>
 							<FontAwesomeIcon className="top" icon={faRobot} />
 						</div>
-					:				  					
-						<iframe
+										  					
+						:<iframe
 							allow="microphone;"
 							width="400"
 							height="450"
