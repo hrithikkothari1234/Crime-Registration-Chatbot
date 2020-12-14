@@ -1,0 +1,27 @@
+{
+  "name": "crimebot-server",
+  "version": "1.0.0",
+  "description": "Server for Crimebot ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hrithikkothari1234/CrimeBot-Server.git"
+  },
+  "author": "Hritik Kothari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hrithikkothari1234/CrimeBot-Server/issues"
+  },
+  "homepage": "https://github.com/hrithikkothari1234/CrimeBot-Server#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "firebase-admin": "^9.4.2",
+    "request": "^2.88.2",
+    "unirest": "^0.6.0"
+  }
+}
