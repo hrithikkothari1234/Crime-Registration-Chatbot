@@ -23,12 +23,11 @@ class Home extends React.Component {
 		return (
 			<Fragment>
 				<Navbar />
+					<div className="Robot" onClick={this.operation}>
+						<FontAwesomeIcon className="top" icon={faRobot} />
+					</div>
 				{
-					this.state.showMe? 
-						<div className="Robot" onClick={this.operation}>
-							<FontAwesomeIcon className="top" icon={faRobot} />
-						</div>
-					:				  					
+					this.state.showMe &&  		  					
 						<iframe
 							allow="microphone;"
 							width="400"
