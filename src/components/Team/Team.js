@@ -1,7 +1,7 @@
   
 import React from "react";
 import "./Team.css";
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 
 import hritik_src from '../assets/team_hritik.jpeg';
 import dhrumil_src from '../assets/team_dhrumil.jpg';
@@ -14,8 +14,7 @@ const Team = () => {
             <Container>
                 <Row className="text-center justify-content-center">
                     <a href="/" className="back-btn">
-                        <i className="fa fa-arrow-left mr-3" aria-hidden="true"></i>
-                        Go back
+						<Button>Go Back</Button>
                     </a>
                 </Row>
 
@@ -25,7 +24,7 @@ const Team = () => {
                     </h5>
                 </Row>
 
-                <Row className="mt-3">
+                <Row className="mt-3" className="headt">
 
                 	<Col lg={3} md={6} sm={12} className="form-group">
 						<Card>
