@@ -3,7 +3,6 @@ import { Button, Card } from 'react-bootstrap';
 import { DeleteCase } from '../../app/configure/firebase/firebase';
 import "./Admin.css";
 const Cards = ({details}) => {
-console.log(details)
     return (
       <Card className="cards_child">
 			    <Card.Body>
