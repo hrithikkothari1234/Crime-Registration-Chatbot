@@ -7,9 +7,14 @@ console.log(details)
     return (
       <Card className="cards_child">
 			    <Card.Body>
-						<Card.Title>{details.[0].title || null}</Card.Title>
+						<Card.Title>{details.[0].Name || null}</Card.Title>
+						<Card.Subtitle className="mb-2 text-muted">City: {details.[0].City || null}</Card.Subtitle>
 				   	<Card.Text>
-			    		{details[0].body || null}
+							Victim: {details.[0].Victim || null}
+							<br/>
+			    		Criminal: {details.[0].Criminal || null}
+							<br/>
+							Contact No: {details.[0].Contact || null}
 		  			</Card.Text>
 				</Card.Body>
 				<Card.Footer>
