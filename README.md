@@ -4,6 +4,7 @@ Vigilante Bot tryna help eradicate crime from this world
 #### Techs Used
 * React.js, Redux
 * Firebase - Auth & Cloud Firestore
+* Node.js Webhook which receives POST Request from Dialogflow
 * Bootstrap
 * DialogFlow
 
